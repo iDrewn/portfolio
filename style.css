@@ -69,6 +69,7 @@ nav a:hover { color: var(--text); }
 .shots.four { grid-template-columns: repeat(4, 1fr); }
 .shots.five { grid-template-columns: repeat(5, 1fr); }
 .shots.narrow { grid-template-columns: minmax(0, 280px); }
+.shots.two { grid-template-columns: repeat(2, minmax(0, 280px)); }
 .shots img { width: 100%; border-radius: 12px; border: 1px solid var(--line); }
 
 .links { display: flex; gap: 10px; flex-wrap: wrap; margin: 28px 0 0; }
