@@ -4,11 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Anders Johansson – iOS apps</title>
-  <meta name="description" content="A portfolio of iOS apps by Anders Johansson: Leaf, Framedevice, Just Draw, Biokoll, Puckkoll and Ekebacken.">
+  <meta name="description" content="A portfolio of iOS apps by Anders Johansson: Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken and Teknikveckan.">
   <meta name="theme-color" content="#6a4cf0">
   <link rel="icon" type="image/png" href="assets/framedevice/icon.png">
   <meta property="og:title" content="Anders Johansson – iOS apps">
-  <meta property="og:description" content="Leaf, Framedevice, Just Draw, Biokoll, Puckkoll and Ekebacken.">
+  <meta property="og:description" content="Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken and Teknikveckan.">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://idrewn.github.io/portfolio/assets/framedevice/mockup-devices.jpg">
   <link rel="stylesheet" href="style.css">
@@ -24,6 +24,7 @@
       <a href="#biokoll">Biokoll</a>
       <a href="#puckkoll">Puckkoll</a>
       <a href="#ekebacken">Ekebacken</a>
+      <a href="#teknikveckan">Teknikveckan</a>
     </nav>
   </div>
 </header>
@@ -32,7 +33,7 @@
   <section class="hero">
     <div class="wrap">
       <h1>Apps for iPhone, iPad and&nbsp;Mac.</h1>
-      <p class="lead">Six iOS apps, written in SwiftUI: a news reader, tools for designers and doodlers, a cinema guide, a hockey app and a hotel guest app. Here is what each one does.</p>
+      <p class="lead">Seven iOS apps, written in SwiftUI: a news reader, tools for designers and doodlers, a cinema guide, a hockey app, a hotel guest app and a tech magazine app. Here is what each one does.</p>
     </div>
   </section>
 
@@ -207,26 +208,61 @@
         <div>
           <h2>Ekebacken</h2>
           <p class="tagline">The official app for Ekebacken Hotell &amp; Konferens in Markaryd.</p>
-          <ul class="chips"><li>iPhone</li><li>Svenska</li><li>SwiftUI · iOS 26+</li><li>Widget</li><li>On the App Store</li></ul>
+          <ul class="chips"><li>iPhone</li><li>iPad</li><li>Svenska</li><li>SwiftUI · iOS 26+</li><li>Widget</li><li>On the App Store</li></ul>
         </div>
       </div>
       <div class="app-body">
-        <p>The hotel's guest app: read the latest news, browse the menus, see the houses and rooms, book a room or a table, and send a message to the hotel. Upcoming events come from a WordPress plugin I wrote for the hotel's site, and new events can send a push notification.</p>
+        <p>The hotel's guest app, rebuilt for iOS 26 as version 3.0. See what's on month by month, check the lunch menu, book a room and get in touch. Upcoming events come from a WordPress plugin I wrote for the hotel's site, and new events can send a push notification.</p>
         <ul class="points">
-          <li>News, menus, rooms and table booking in one place</li>
-          <li>Events by month, including recurring ones</li>
-          <li>Home screen widget and push notifications</li>
+          <li>Events by month, with a map and an add-to-calendar button</li>
+          <li>Lunch menu, room booking, and a contact form with table requests</li>
+          <li>Home screen widget with the next event, and push notifications</li>
+          <li>Works offline, with no accounts and no tracking</li>
         </ul>
       </div>
       <div class="shots four">
-        <img src="assets/ekebacken/screen-1.jpg" alt="Ekebacken: latest news" loading="lazy">
-        <img src="assets/ekebacken/screen-2.jpg" alt="Ekebacken screenshot" loading="lazy">
-        <img src="assets/ekebacken/screen-3.jpg" alt="Ekebacken screenshot" loading="lazy">
-        <img src="assets/ekebacken/screen-4.jpg" alt="Ekebacken screenshot" loading="lazy">
+        <img src="assets/ekebacken/screen-1.jpg" alt="Ekebacken: upcoming events" loading="lazy">
+        <img src="assets/ekebacken/screen-2.jpg" alt="Ekebacken: an event with map and add-to-calendar" loading="lazy">
+        <img src="assets/ekebacken/screen-3.jpg" alt="Ekebacken: the lunch menu" loading="lazy">
+        <img src="assets/ekebacken/screen-4.jpg" alt="Ekebacken: contact form" loading="lazy">
       </div>
       <p class="links">
         <a class="btn" href="https://apps.apple.com/se/app/ekebacken/id1541043155">App Store</a>
+        <a class="btn" href="https://idrewn.github.io/ekebacken-site/">Website</a>
         <a class="btn" href="https://testflight.apple.com/join/n1Y09Ga0">TestFlight beta</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- Teknikveckan -->
+  <section class="app" id="teknikveckan" style="--accent: #fa2872">
+    <div class="wrap">
+      <div class="app-head">
+        <img class="icon" src="assets/teknikveckan/icon.png" alt="" width="88" height="88">
+        <div>
+          <h2>Teknikveckan</h2>
+          <p class="tagline">Articles, reviews and the Teknikbubblan forum in one app.</p>
+          <ul class="chips"><li>iPhone</li><li>iPad</li><li>iPhone Duo</li><li>Svenska</li><li>SwiftUI · iOS 26+</li><li>Liquid Glass</li></ul>
+        </div>
+      </div>
+      <div class="app-body">
+        <p>A native client for teknikveckan.se and its Discourse forum. The home screen shows the latest articles and reviews in a dark mobile design, and the forum sits one tab over, so you can read an article and jump straight into its discussion.</p>
+        <ul class="points">
+          <li>Review boxes with pros, cons, details and a rating, plus a reading list and search</li>
+          <li>The whole forum: topics, categories, threads, likes, replies, new topics and private messages</li>
+          <li>Links to articles and forum threads open inside the app</li>
+          <li>Anonymous statistics that can be switched off, and alternate app icons</li>
+        </ul>
+      </div>
+      <div class="shots four">
+        <img src="assets/teknikveckan/screen-home.jpg" alt="Teknikveckan: the home screen with the latest reviews and news" loading="lazy">
+        <img src="assets/teknikveckan/screen-review.jpg" alt="Teknikveckan: a review article" loading="lazy">
+        <img src="assets/teknikveckan/screen-reading.jpg" alt="Teknikveckan: the reading view" loading="lazy">
+        <img src="assets/teknikveckan/screen-review-box.jpg" alt="Teknikveckan: a review box with pros and cons" loading="lazy">
+      </div>
+      <p class="links">
+        <a class="btn" href="https://idrewn.github.io/teknikveckan-site/">Website</a>
+        <span class="btn ghost" aria-disabled="true">TestFlight link coming</span>
       </p>
     </div>
   </section>
