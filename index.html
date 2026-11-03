@@ -2,276 +2,204 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Anders Johansson – iOS apps</title>
   <meta name="description" content="A portfolio of iOS apps by Anders Johansson: Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken and Teknikveckan.">
-  <meta name="theme-color" content="#6a4cf0">
-  <link rel="icon" type="image/png" href="assets/framedevice/icon.png">
-  <meta property="og:title" content="Anders Johansson – iOS apps">
+  <meta name="theme-color" content="#07070d">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="Anders Johansson">
   <meta property="og:description" content="Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken and Teknikveckan.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://idrewn.github.io/portfolio/assets/framedevice/mockup-devices.jpg">
-  <link rel="stylesheet" href="style.css">
+  <meta property="og:url" content="https://idrewn.github.io/portfolio/">
+  <meta property="og:image" content="https://idrewn.github.io/portfolio/assets/og.jpg">
+  <link rel="stylesheet" href="motion.css">
+  <link rel="stylesheet" href="theme.css">
 </head>
 <body>
-<header class="site-header">
-  <div class="wrap">
-    <a class="brand" href="./">Anders Johansson</a>
-    <nav aria-label="Main">
-      <a href="#leaf">Leaf</a>
-      <a href="#framedevice">Framedevice</a>
-      <a href="#justdraw">Just Draw</a>
-      <a href="#biokoll">Biokoll</a>
-      <a href="#puckkoll">Puckkoll</a>
-      <a href="#ekebacken">Ekebacken</a>
-      <a href="#teknikveckan">Teknikveckan</a>
-    </nav>
-  </div>
-</header>
-
+<div class="ambient" aria-hidden="true"></div>
+<header class="nav"><div class="wrap">
+  <a class="brand" href="./">Anders Johansson</a>
+  <ul><li><a href="#leaf">Leaf</a></li><li><a href="#framedevice">Framedevice</a></li><li><a href="#justdraw">Just Draw</a></li><li><a href="#biokoll">Biokoll</a></li><li><a href="#puckkoll">Puckkoll</a></li><li><a href="#ekebacken">Ekebacken</a></li><li><a href="#teknikveckan">Teknikveckan</a></li></ul>
+  <a class="buy" href="https://github.com/iDrewn">GitHub</a>
+</div></header>
 <main>
-  <section class="hero">
-    <div class="wrap">
-      <h1>Apps for iPhone, iPad and&nbsp;Mac.</h1>
-      <p class="lead">Seven iOS apps, written in SwiftUI: a news reader, tools for designers and doodlers, a cinema guide, a hockey app, a hotel guest app and a tech magazine app. Here is what each one does.</p>
+<section class="stage hero" id="top" style="--n:3.3" data-stage data-bg="#07070d" data-glow="110,120,255">
+  <div class="pin">
+    <div class="hero-copy" data-beat="-1,-0.5,0.2,0.46" data-travel="-110">
+      <p class="eyebrow">Anders Johansson &middot; iOS apps</p>
+      <h1>Seven apps.<br><span class="grad">Built in SwiftUI.</span></h1>
+      <p class="lead">A news reader, tools for designers and doodlers, a cinema guide, a hockey app, a hotel guest app and a tech magazine app.</p>
+      <div class="cta"><a class="pill fill" href="#leaf">See the apps</a><a class="pill line" href="https://github.com/iDrewn">GitHub</a></div>
     </div>
-  </section>
-
-  <!-- Leaf -->
-  <section class="app" id="leaf" style="--accent: #b82e3d">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/leaf/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Leaf</h2>
-          <p class="tagline">An RSS reader where the news turns like a page.</p>
-          <ul class="chips"><li>iPhone</li><li>iPad</li><li>iPhone Duo</li><li>Svenska &amp; English</li><li>SwiftUI · iOS 26+</li><li>Widget</li></ul>
-        </div>
-      </div>
-      <img class="banner" src="assets/leaf/screen-duo.jpg" alt="Leaf on an iPhone Duo: two pages side by side with a third page curling over like paper" loading="lazy">
-      <div class="app-body">
-        <p>Leaf is a news reader where every story is a page. Follow the sources you choose, swipe, and the page curls over like paper. On iPhone Duo and iPad two pages sit side by side, centred on the fold, and the stories keep clear of the crease when the device is part way open.</p>
-        <ul class="points">
-          <li>Suggested sources for your country, in sections, or add any feed or website</li>
-          <li>Reading place, sources and saved stories sync through iCloud, with no account</li>
-          <li>Notifications and a morning edition, made on the device with no server</li>
-          <li>Search, unread only, widget, OPML import and export, and no tracking</li>
-        </ul>
-      </div>
-      <div class="shots two">
-        <img src="assets/leaf/screen-iphone.jpg" alt="Leaf on an iPhone: one story as a page" loading="lazy">
-        <img src="assets/leaf/screen-sources.jpg" alt="Leaf's Sources screen" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/leaf-site/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/WN9FSDAE">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Framedevice -->
-  <section class="app alt" id="framedevice" style="--accent: #6a4cf0">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/framedevice/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Framedevice</h2>
-          <p class="tagline">Screenshot and video mockups, and device info.</p>
-          <ul class="chips"><li>iPhone</li><li>iPad</li><li>Mac</li><li>iPhone Duo</li><li>SwiftUI · iOS 26+</li></ul>
-        </div>
-      </div>
-      <img class="banner" src="assets/framedevice/mockup-devices.jpg" alt="An iPhone, an iPad and an Apple Watch in mockup frames on a purple-to-red gradient" loading="lazy">
-      <div class="app-body">
-        <p>Framedevice puts your screenshots and screen recordings in iPhone, iPhone Duo, iPad, Apple Watch and Mac frames, drawn as vectors with no Apple artwork. Put up to four devices on one canvas, pick a backdrop, shadow and caption, and export as images or MP4 video, in one size or several at once for the App Store and social media.</p>
-        <ul class="points">
-          <li>Share extension: send pictures straight from the share sheet</li>
-          <li>Saved looks sync between devices through iCloud, with no account</li>
-          <li>Backdrops from the screenshot's own colours, callouts and motion</li>
-          <li>Runs natively on the Mac as a Catalyst app</li>
-        </ul>
-      </div>
-      <div class="shots">
-        <img src="assets/framedevice/screen-mockups.jpg" alt="Framedevice mockup editor" loading="lazy">
-        <img src="assets/framedevice/screen-backdrop.jpg" alt="Framedevice backdrop options" loading="lazy">
-        <img src="assets/framedevice/screen-device.jpg" alt="Framedevice device information tab" loading="lazy">
-      </div>
-      <img class="wide" src="assets/framedevice/screen-mac.jpg" alt="Framedevice running on a Mac" loading="lazy">
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/framedevice/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/SBDHbqY1">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Just Draw -->
-  <section class="app" id="justdraw" style="--accent: #c430e0">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/justdraw/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Just Draw</h2>
-          <p class="tagline">A blank page, eight colours and your finger.</p>
-          <ul class="chips"><li>iPhone</li><li>iPad</li><li>iPhone Duo</li><li>SwiftUI · iOS 27+</li></ul>
-        </div>
-      </div>
-      <img class="banner" src="assets/justdraw/screen-duo.jpg" alt="Just Draw on an iPhone Duo" loading="lazy">
-      <div class="app-body">
-        <p>A simple drawing app: pick a colour, pick a brush size, draw, share. The canvas fills the screen and the controls are system toolbar items, so it feels at home on every device, including iPhone Duo.</p>
-        <ul class="points">
-          <li>Undo and redo through the system, including shake to undo</li>
-          <li>Works with finger or Apple Pencil</li>
-          <li>Your drawing is saved as you go</li>
-          <li>English and Swedish, and no tracking</li>
-        </ul>
-      </div>
-      <div class="shots narrow">
-        <img src="assets/justdraw/screen-iphone.jpg" alt="Just Draw on an iPhone" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/justdraw-site/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/3rHHeFmC">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Biokoll -->
-  <section class="app alt" id="biokoll" style="--accent: #c4161c">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/biokoll/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Biokoll</h2>
-          <p class="tagline">What's on at your local cinema, and what's coming.</p>
-          <ul class="chips"><li>iPhone</li><li>Svenska &amp; English</li><li>SwiftUI · iOS 26+</li><li>Liquid Glass</li></ul>
-        </div>
-      </div>
-      <div class="app-body">
-        <p>Biokoll shows the programme at five cinemas in southern Sweden: a poster grid of what's playing, premieres by month, and a trailer that plays right on the movie page. Tap a showtime to go straight to booking.</p>
-        <ul class="points">
-          <li>Filter by day and age rating</li>
-          <li>Saved for offline, with a banner that says when it was last updated</li>
-          <li>Reads the cinemas' own public data, no accounts and no tracking</li>
-        </ul>
-      </div>
-      <div class="shots five">
-        <img src="assets/biokoll/screen-now-showing.jpg" alt="Biokoll: now showing" loading="lazy">
-        <img src="assets/biokoll/screen-day-filter.jpg" alt="Biokoll: day filter" loading="lazy">
-        <img src="assets/biokoll/screen-coming.jpg" alt="Biokoll: coming soon" loading="lazy">
-        <img src="assets/biokoll/screen-movie.jpg" alt="Biokoll: movie page" loading="lazy">
-        <img src="assets/biokoll/screen-cinemas.jpg" alt="Biokoll: cinemas" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/reelhouse-web/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/zVCBJX56">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Puckkoll -->
-  <section class="app" id="puckkoll" style="--accent: #2b6fd0">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/puckkoll/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Puckkoll</h2>
-          <p class="tagline">Your team in the SHL, SDHL or HockeyAllsvenskan, with the score as it changes.</p>
-          <ul class="chips"><li>iPhone</li><li>Apple Watch</li><li>iPhone Duo</li><li>Svenska &amp; English</li><li>SwiftUI · iOS 26+</li><li>Widgets</li><li>Live Activities</li></ul>
-        </div>
-      </div>
-      <img class="banner" src="assets/puckkoll/screen-duo.jpg" alt="Puckkoll's SHL table on an iPhone Duo, every club drawn as a puck in its colours" loading="lazy">
-      <div class="app-body">
-        <p>Puckkoll follows the SHL, the SDHL and HockeyAllsvenskan: the schedule, live games with goals, line-ups and shots, tables and season statistics. A small server I run sends goal notifications and keeps a Live Activity on the Lock Screen, and there is a widget and an Apple Watch app. Tipset lets friends and family tip the results in groups.</p>
-        <ul class="points">
-          <li>Every club is a puck in its own colours, or a picture you choose yourself</li>
-          <li>Notifications per club, an optional delay for games you watch on TV, and a spoiler-free mode</li>
-          <li>Game recaps written on the iPhone with Apple Intelligence</li>
-          <li>Reads the leagues' own public pages, with no accounts, no ads and no tracking</li>
-        </ul>
-      </div>
-      <div class="shots">
-        <img src="assets/puckkoll/screen-sdhl.jpg" alt="Puckkoll's SDHL schedule with a menu for switching league" loading="lazy">
-        <img src="assets/puckkoll/screen-columns.jpg" alt="Choosing which columns the table shows" loading="lazy">
-        <img src="assets/puckkoll/screen-badges.jpg" alt="The SHL clubs as pucks, with a picture of your own to choose for each" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/puckkoll-site/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/mNUufdGk">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Ekebacken -->
-  <section class="app alt" id="ekebacken" style="--accent: #2c9a6a">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/ekebacken/icon.jpg" alt="" width="88" height="88">
-        <div>
-          <h2>Ekebacken</h2>
-          <p class="tagline">The official app for Ekebacken Hotell &amp; Konferens in Markaryd.</p>
-          <ul class="chips"><li>iPhone</li><li>iPad</li><li>Svenska</li><li>SwiftUI · iOS 26+</li><li>Widget</li><li>On the App Store</li></ul>
-        </div>
-      </div>
-      <div class="app-body">
-        <p>The hotel's guest app, rebuilt for iOS 26 as version 3.0. See what's on month by month, check the lunch menu, book a room and get in touch. Upcoming events come from a WordPress plugin I wrote for the hotel's site, and new events can send a push notification.</p>
-        <ul class="points">
-          <li>Events by month, with a map and an add-to-calendar button</li>
-          <li>Lunch menu, room booking, and a contact form with table requests</li>
-          <li>Home screen widget with the next event, and push notifications</li>
-          <li>Works offline, with no accounts and no tracking</li>
-        </ul>
-      </div>
-      <div class="shots four">
-        <img src="assets/ekebacken/screen-home.jpg" alt="Ekebacken: upcoming events" loading="lazy">
-        <img src="assets/ekebacken/screen-event.jpg" alt="Ekebacken: an event with map and add-to-calendar" loading="lazy">
-        <img src="assets/ekebacken/screen-lunch.jpg" alt="Ekebacken: the lunch menu" loading="lazy">
-        <img src="assets/ekebacken/screen-contact.jpg" alt="Ekebacken: contact form" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://apps.apple.com/se/app/ekebacken/id1541043155">App Store</a>
-        <a class="btn" href="https://idrewn.github.io/ekebacken-site/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/n1Y09Ga0">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-
-  <!-- Teknikveckan -->
-  <section class="app" id="teknikveckan" style="--accent: #fa2872">
-    <div class="wrap">
-      <div class="app-head">
-        <img class="icon" src="assets/teknikveckan/icon.png" alt="" width="88" height="88">
-        <div>
-          <h2>Teknikveckan</h2>
-          <p class="tagline">Articles, reviews and the Teknikbubblan forum in one app.</p>
-          <ul class="chips"><li>iPhone</li><li>iPad</li><li>iPhone Duo</li><li>Svenska</li><li>SwiftUI · iOS 26+</li><li>Liquid Glass</li></ul>
-        </div>
-      </div>
-      <div class="app-body">
-        <p>A native client for teknikveckan.se and its Discourse forum. The home screen shows the latest articles and reviews in a dark mobile design, and the forum sits one tab over, so you can read an article and jump straight into its discussion.</p>
-        <ul class="points">
-          <li>Review boxes with pros, cons, details and a rating, plus a reading list and search</li>
-          <li>The whole forum: topics, categories, threads, likes, replies, new topics and private messages</li>
-          <li>Links to articles and forum threads open inside the app</li>
-          <li>Anonymous statistics that can be switched off, and alternate app icons</li>
-        </ul>
-      </div>
-      <div class="shots four">
-        <img src="assets/teknikveckan/screen-home.jpg" alt="Teknikveckan: the home screen with the latest reviews and news" loading="lazy">
-        <img src="assets/teknikveckan/screen-review.jpg" alt="Teknikveckan: a review article" loading="lazy">
-        <img src="assets/teknikveckan/screen-reading.jpg" alt="Teknikveckan: the reading view" loading="lazy">
-        <img src="assets/teknikveckan/screen-review-box.jpg" alt="Teknikveckan: a review box with pros and cons" loading="lazy">
-      </div>
-      <p class="links">
-        <a class="btn" href="https://idrewn.github.io/teknikveckan-site/">Website</a>
-        <a class="btn" href="https://testflight.apple.com/join/udA9Tbey">TestFlight beta</a>
-      </p>
-    </div>
-  </section>
-</main>
-
-<footer class="site-footer">
-  <div class="wrap">
-    <p>© Anders Johansson · <a href="https://github.com/iDrewn">github.com/iDrewn</a></p>
+    <p class="hero-tag" data-beat="0.42,0.62,2,3" data-travel="50">Meet them.</p>
+    <div class="fan mid"><div class="device icon" data-motion="fan" data-i="0" data-n="7"><img src="assets/icons/leaf.png" alt="Leaf" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="1" data-n="7"><img src="assets/icons/framedevice.png" alt="Framedevice" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="2" data-n="7"><img src="assets/icons/justdraw.png" alt="Just Draw" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="3" data-n="7"><img src="assets/icons/biokoll.png" alt="Biokoll" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="4" data-n="7"><img src="assets/icons/puckkoll.png" alt="Puckkoll" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="5" data-n="7"><img src="assets/icons/ekebacken.jpg" alt="Ekebacken" width="512" height="512"></div><div class="device icon" data-motion="fan" data-i="6" data-n="7"><img src="assets/icons/teknikveckan.png" alt="Teknikveckan" width="512" height="512"></div></div>
   </div>
-</footer>
+</section>
+<section class="stage numbers" style="--n:2.6" data-stage data-bg="#0a0a18" data-glow="110,120,255">
+  <div class="pin"><div class="row" data-zoom><div><div class="n grad" data-count="7" data-pre="" data-suf="">0</div><div class="l">apps</div></div><div><div class="n grad" data-count="1" data-pre="" data-suf="">0</div><div class="l">developer</div></div><div><div class="n grad" data-count="26" data-pre="iOS " data-suf="">0</div><div class="l">and up</div></div></div><p class="sentence">Every one of them is written in SwiftUI and made for the newest iOS.</p></div>
+</section>
+<section class="stage" id="leaf" style="--n:4.1" data-stage data-bg="#1a0a0e" data-glow="214,58,78">
+  <i class="mark" aria-hidden="true" data-bg="#1a0a0e" data-glow="214,58,78" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0a0e" data-glow="214,58,78" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0a0e" data-glow="214,58,78" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/leaf.png" alt="" width="84" height="84"><p class="eyebrow">RSS reader &amp;middot; iPhone &amp;middot; iPad &amp;middot; iPhone Duo</p>
+        <h2>Leaf</h2>
+        <p>An RSS reader where the news turns like a page.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Pages that turn</p>
+        <h2>Two pages on the Duo.</h2>
+        <p>Every story is a page. On iPhone Duo and iPad two pages sit side by side, centred on the fold, and the stories keep clear of the crease.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">iCloud &amp;middot; Widget &amp;middot; No tracking</p>
+        <h2>Yours, everywhere.</h2>
+        <p>Sources, saved stories and reading place sync through iCloud with no account. Notifications and a morning edition are made on the device.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/leaf-site/">Website</a><a class="pill line" href="https://testflight.apple.com/join/WN9FSDAE">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device wide" data-motion="wide" style="aspect-ratio:1600/1125"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/leaf-curl.jpg" alt="Leaf on an iPhone Duo, a page curling over" loading="lazy" width=1600 height=1125><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/leaf-duo.jpg" alt="Leaf with two pages side by side" loading="lazy" width=1600 height=1125><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/leaf-duo.jpg" alt="Leaf" loading="lazy" width=1600 height=1125></div></div>
+  </div>
+</section>
+<section class="stage" id="framedevice" style="--n:4.1" data-stage data-bg="#110a24" data-glow="106,76,240">
+  <i class="mark" aria-hidden="true" data-bg="#110a24" data-glow="106,76,240" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#110a24" data-glow="106,76,240" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#110a24" data-glow="106,76,240" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/framedevice.png" alt="" width="84" height="84"><p class="eyebrow">Mockups &amp;middot; iPhone &amp;middot; iPad &amp;middot; Mac</p>
+        <h2>Framedevice</h2>
+        <p>Mockups for screenshots and screen recordings, and everything about your device.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Now on the Mac</p>
+        <h2>Up to four devices, one canvas.</h2>
+        <p>Own vector frames for iPhone 16, 17 and 18, iPhone Duo, iPad, Apple Watch and MacBook, with backdrops, callouts, motion and video export.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">Made for iPhone Duo</p>
+        <h2>Every size in one go.</h2>
+        <p>App Store and social sizes rendered into one folder, as PNG, JPEG, or an MP4 when a device has a screen recording.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/framedevice/">Website</a><a class="pill line" href="https://testflight.apple.com/join/SBDHbqY1">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device wide" data-motion="wide" style="aspect-ratio:16/9"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/fd-canvas.jpg" alt="Several devices on one canvas" loading="lazy" width=1600 height=900><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/fd-mac.jpg" alt="Framedevice on the Mac" loading="lazy" width=1600 height=900><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/fd-duo.jpg" alt="An iPhone Duo mockup" loading="lazy" width=1600 height=900></div></div>
+  </div>
+</section>
+<section class="stage" id="justdraw" style="--n:4.1" data-stage data-bg="#150a1a" data-glow="196,48,224">
+  <i class="mark" aria-hidden="true" data-bg="#150a1a" data-glow="196,48,224" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#150a1a" data-glow="196,48,224" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#150a1a" data-glow="196,48,224" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/justdraw.png" alt="" width="84" height="84"><p class="eyebrow">Drawing &amp;middot; iPhone &amp;middot; iPad &amp;middot; iPhone Duo</p>
+        <h2>Just Draw</h2>
+        <p>A blank page, eight colors and your finger.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Small on purpose</p>
+        <h2>Undo anything.</h2>
+        <p>Shake to undo, swipe with three fingers or press &#8984;Z. Clearing the page can be undone too. No accounts, no permissions and no network.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">On every screen</p>
+        <h2>Made for iPhone Duo.</h2>
+        <p>The page fills whichever display you use, closed, open or part way.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/justdraw-site/">Website</a><a class="pill line" href="https://testflight.apple.com/join/3rHHeFmC">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img src="assets/p/jd-phone.png" alt="Just Draw on an iPhone" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage" id="biokoll" style="--n:4.1" data-stage data-bg="#14080c" data-glow="217,36,43">
+  <i class="mark" aria-hidden="true" data-bg="#14080c" data-glow="217,36,43" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#14080c" data-glow="217,36,43" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#14080c" data-glow="217,36,43" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/biokoll.png" alt="" width="84" height="84"><p class="eyebrow">Cinema guide &amp;middot; iPhone</p>
+        <h2>Biokoll</h2>
+        <p>What&rsquo;s on at your local cinema, and what&rsquo;s coming.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Trailers and tickets</p>
+        <h2>Showtimes, plot, trailer.</h2>
+        <p>A poster grid of what&rsquo;s playing, premieres by month, and a trailer that plays right on the movie page. Tap a time to go straight to booking.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">Offline &amp;middot; Private</p>
+        <h2>Saved for later.</h2>
+        <p>The schedule is kept for offline use, with a banner that says when it was updated. It reads the cinemas&rsquo; own public data: no accounts, no tracking.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/reelhouse-web/">Website</a><a class="pill line" href="https://testflight.apple.com/join/zVCBJX56">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/bk-now.png" alt="Now showing" loading="lazy" width=1306 height=2360><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/bk-movie.png" alt="A movie page" loading="lazy" width=1306 height=2360><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/bk-coming.png" alt="Coming soon" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage" id="puckkoll" style="--n:4.1" data-stage data-bg="#08162e" data-glow="43,111,208">
+  <i class="mark" aria-hidden="true" data-bg="#08162e" data-glow="43,111,208" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#0e2c3c" data-glow="30,140,170" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#0a1f33" data-glow="43,111,208" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/puckkoll.png" alt="" width="84" height="84"><p class="eyebrow">Hockey &amp;middot; iPhone &amp;middot; Apple Watch &amp;middot; Duo</p>
+        <h2>Puckkoll</h2>
+        <p>Your team in the SHL, SDHL and HockeyAllsvenskan.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Match page</p>
+        <h2>Every shot, on the map.</h2>
+        <p>Live scores, pressure charts, shot maps and a summary written on your iPhone, for every game.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">Alerts &amp;middot; Tipset</p>
+        <h2>A notification when it counts.</h2>
+        <p>Goal notifications, Live Activities, a widget, an Apple Watch app and Tipset to tip with friends. No accounts, no tracking.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/puckkoll-site/">Website</a><a class="pill line" href="https://testflight.apple.com/join/mNUufdGk">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/pk-matches.png" alt="The schedule" loading="lazy" width=1306 height=2360><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/pk-shotmap.png" alt="The shot map" loading="lazy" width=1306 height=2360><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/pk-table.png" alt="The table" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage" id="ekebacken" style="--n:4.1" data-stage data-bg="#0b140a" data-glow="95,214,162">
+  <i class="mark" aria-hidden="true" data-bg="#0b140a" data-glow="95,214,162" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#0d1a0f" data-glow="95,214,162" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#0b1a12" data-glow="95,214,162" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/ekebacken.jpg" alt="" width="84" height="84"><p class="eyebrow">Hotel guest app &amp;middot; iPhone &amp;middot; iPad &amp;middot; Swedish</p>
+        <h2>Ekebacken</h2>
+        <p>The official app for Ekebacken Hotell &amp; Konferens in Markaryd.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Events</p>
+        <h2>What&rsquo;s on, month by month.</h2>
+        <p>Events come from a WordPress plugin I wrote for the hotel&rsquo;s site, with a map, add-to-calendar and a push notification for new events.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">On the App Store</p>
+        <h2>Lunch, rooms, contact.</h2>
+        <p>The lunch menu, room booking, a contact form and a home screen widget with the next event.</p><div class="cta"><a class="pill fill" href="https://apps.apple.com/se/app/ekebacken/id1541043155">App Store</a><a class="pill line" href="https://idrewn.github.io/ekebacken-site/">Website</a><a class="pill line" href="https://testflight.apple.com/join/n1Y09Ga0">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/eb-home.png" alt="Upcoming events" loading="lazy" width=1306 height=2360><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/eb-event.png" alt="An event with a map" loading="lazy" width=1306 height=2360><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/eb-lunch.png" alt="The lunch menu" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage" id="teknikveckan" style="--n:4.1" data-stage data-bg="#12070f" data-glow="250,40,114">
+  <i class="mark" aria-hidden="true" data-bg="#12070f" data-glow="250,40,114" style="position:absolute;left:0;top:24.80%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#1a0814" data-glow="250,40,114" style="position:absolute;left:0;top:50.00%;width:1px;height:1px"></i>
+<i class="mark" aria-hidden="true" data-bg="#160a18" data-glow="250,40,114" style="position:absolute;left:0;top:75.20%;width:1px;height:1px"></i>
+  <div class="pin split">
+    <div class="copy"><div class="beat" data-beat="-1.000,-0.500,0.283,0.383">
+        <img class="beat-icon" src="assets/icons/teknikveckan.png" alt="" width="84" height="84"><p class="eyebrow">News &amp;amp; forum &amp;middot; iPhone &amp;middot; iPad &amp;middot; Swedish</p>
+        <h2>Teknikveckan</h2>
+        <p>Articles, reviews and the Teknikbubblan forum in one app.</p>
+      </div><div class="beat" data-beat="0.283,0.383,0.617,0.717">
+        <p class="eyebrow">Reviews</p>
+        <h2>Rating first. Details next.</h2>
+        <p>Review boxes with pros, cons, details and a rating, a reading list and search, and links that open inside the app.</p>
+      </div><div class="beat" data-beat="0.617,0.717,2.000,3.000">
+        <p class="eyebrow">The forum</p>
+        <h2>Bubblan comes along.</h2>
+        <p>Topics, categories, threads, likes, replies, new topics and private messages, in the same app.</p><div class="cta"><a class="pill fill" href="https://idrewn.github.io/teknikveckan-site/">Website</a><a class="pill line" href="https://testflight.apple.com/join/udA9Tbey">TestFlight</a></div>
+      </div></div>
+    <div class="devwrap"><div class="device" data-motion="sway"><img data-beat="-1.000,-0.500,0.273,0.393" src="assets/p/tv-home.png" alt="The home screen" loading="lazy" width=1306 height=2360><img data-beat="0.273,0.393,0.607,0.727" src="assets/p/tv-review.png" alt="A review" loading="lazy" width=1306 height=2360><img data-beat="0.607,0.727,2.000,3.000" src="assets/p/tv-reviewbox.png" alt="A review box" loading="lazy" width=1306 height=2360></div></div>
+  </div>
+</section>
+<section class="stage hstage" id="all" style="--n:4" data-stage data-bg="#0a0a18" data-glow="110,120,255">
+  <div class="pin"><div class="track-head"><p class="eyebrow">All seven</p><h2>Pick one.</h2></div><div class="track" data-track><a class="card" href="https://idrewn.github.io/leaf-site/"><img src="assets/icons/leaf.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Leaf</h3><p>The news, one page at a time.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/framedevice/"><img src="assets/icons/framedevice.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Framedevice</h3><p>Mockups for iPhone, iPad and Mac.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/justdraw-site/"><img src="assets/icons/justdraw.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Just Draw</h3><p>A blank page and your finger.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/reelhouse-web/"><img src="assets/icons/biokoll.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Biokoll</h3><p>What&rsquo;s on at your cinema.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/puckkoll-site/"><img src="assets/icons/puckkoll.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Puckkoll</h3><p>Your hockey team, on every screen.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/ekebacken-site/"><img src="assets/icons/ekebacken.jpg" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Ekebacken</h3><p>The hotel guest app.</p></div><span class="go">Website &rarr;</span></a><a class="card" href="https://idrewn.github.io/teknikveckan-site/"><img src="assets/icons/teknikveckan.png" alt="" width="72" height="72" style="border-radius:17px"><div><h3>Teknikveckan</h3><p>Articles, reviews and the forum.</p></div><span class="go">Website &rarr;</span></a></div></div>
+</section>
+<section class="cta-block" id="get" data-bg="#07070d" data-glow="110,120,255">
+  <div class="wrap">
+    
+    <h2 data-reveal>Say hello.</h2>
+    <p class="lead" data-reveal>Everything here is written in SwiftUI. The code lives on GitHub.</p>
+    <div class="cta" data-reveal><a class="pill fill" href="https://github.com/iDrewn">github.com/iDrewn</a></div>
+    
+  </div>
+</section>
+</main>
+<footer><div class="wrap"><p>&copy; 2026 Anders Johansson. iPhone, iPad, iPhone Duo, Apple Watch and Mac are trademarks of Apple Inc. Screenshots show the apps in the Xcode simulator and contain content that belongs to its publishers.</p></div></footer>
+<script src="motion.js" defer></script>
 </body>
 </html>
