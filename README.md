@@ -1,6 +1,6 @@
 # Portfolio
 
-A portfolio of my iOS apps: Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken and Teknikveckan.
+A portfolio of my iOS apps: Leaf, Framedevice, Just Draw, Biokoll, Puckkoll, Ekebacken, Teknikveckan and VIcinity.
 
 Live site: https://idrewn.github.io/portfolio/
 
